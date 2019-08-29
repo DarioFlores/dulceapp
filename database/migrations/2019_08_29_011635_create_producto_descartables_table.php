@@ -17,7 +17,6 @@ class CreateProductoDescartablesTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('producto_id');
             $table->unsignedBigInteger('descartable_id');
-            $table->float('cantidad');
 
             $table->foreign('producto_id')->references('id')->on('productos');
             $table->foreign('descartable_id')->references('id')->on('descartables');

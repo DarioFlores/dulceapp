@@ -1,5 +1,6 @@
 <?php
 
+use App\Unidad;
 use Illuminate\Database\Seeder;
 
 class UnidadSeeder extends Seeder
@@ -11,6 +12,19 @@ class UnidadSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(Unidad::class)->create([
+            'nombre' => 'Litros',
+            'simbolo' => 'L',
+        ]);
+
+        factory(Unidad::class)->create([
+            'nombre' => 'Unidades',
+            'simbolo' => 'U',
+        ]);
+
+        factory(Unidad::class)->create([
+            'nombre' => 'Kilogramos',
+            'simbolo' => 'Kg',
+        ]);
     }
 }

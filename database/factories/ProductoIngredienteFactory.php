@@ -11,6 +11,6 @@ $factory->define(ProductoIngrediente::class, function (Faker $faker) {
     return [
         'producto_id'    => Producto::all()->random()->id,
         'ingrediente_id'    => Ingrediente::all()->random()->id,
-        'cantidad'    => $faker->randomFloat(),
+        'cantidad'    => $faker->randomFloat(3,0,100),
     ];
 });

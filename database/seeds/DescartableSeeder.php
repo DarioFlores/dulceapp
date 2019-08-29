@@ -1,5 +1,6 @@
 <?php
 
+use App\Descartable;
 use Illuminate\Database\Seeder;
 
 class DescartableSeeder extends Seeder
@@ -11,6 +12,6 @@ class DescartableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(Descartable::class, 100)->create();
     }
 }

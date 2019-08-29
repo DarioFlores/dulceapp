@@ -1,5 +1,6 @@
 <?php
 
+use App\ProductoIngrediente;
 use Illuminate\Database\Seeder;
 
 class ProductoIngredienteSeeder extends Seeder
@@ -11,6 +12,6 @@ class ProductoIngredienteSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(ProductoIngrediente::class, 100)->create();
     }
 }

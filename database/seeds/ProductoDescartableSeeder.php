@@ -1,5 +1,6 @@
 <?php
 
+use App\ProductoDescartable;
 use Illuminate\Database\Seeder;
 
 class ProductoDescartableSeeder extends Seeder
@@ -11,6 +12,6 @@ class ProductoDescartableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(ProductoDescartable::class, 100)->create();
     }
 }

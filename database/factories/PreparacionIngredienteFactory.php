@@ -11,6 +11,6 @@ $factory->define(PreparacionIngrediente::class, function (Faker $faker) {
     return [
         'preparacion_id'    => Preparacion::all()->random()->id,
         'ingrediente_id'    => Ingrediente::all()->random()->id,
-        'cantidad'    => $faker->randomFloat(),
+        'cantidad'    => $faker->randomFloat(3,0,100),
     ];
 });
